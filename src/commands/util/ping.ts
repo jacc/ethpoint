@@ -6,6 +6,10 @@ export const ping: ChatCommand = {
   type: "CHAT_INPUT",
   inhibitors: [],
   async run(interaction) {
-    await interaction.reply({ content: "Pong!", ephemeral: true });
+    await interaction.reply({
+      content:
+        "Pong! The bot is online.\n\n[Follow the creator on Twitter](<https://twitter.com/laf0nd>) | [View the source on GitHub](<https://twitter.com/jacc/ethpoint>)",
+      ephemeral: true,
+    });
   },
 };
